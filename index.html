@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Contatos</title>
+</head>
+<body>
+
+    <header>
+        <h1>📋 Cadastrar Contatos</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="">
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="">
+            </div>
+            <div class="campo">
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" placeholder="">
+            </div>
+            <div class="campo">
+                <label for="imagem">Foto (URL)</label>
+                <input type="url" id="imagem" placeholder="">
+            </div>
+            <div class="campo">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="">
+            </div>
+            <div class="campo">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" placeholder="">
+            </div>
+
+            <button id="btnSalvar">
+                Salvar Contato
+            </button>
+        </section>
+
+        <section class="resultado">
+            <p class="resultado-titulo">Contatos Cadastrados</p>
+            <div class="tabela-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>Foto</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
